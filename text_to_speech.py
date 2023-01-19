@@ -6,12 +6,17 @@ sys.path.append("/absolute/module/path")
 # Import the required module for text 
 # to speech conversion
 
+
 # This module is imported so that we can 
 # play the converted audio
 # The text that you want to convert to audio
 
 if __name__ == '__main__':
-    mytext = sys.argv
+
+    with open("Text.txt", "r", encoding="utf-8") as f:
+        contents = f.read()
+        print(contents)
+    mytext = contents
 
     # Language in which you want to convert
     language = 'pt'
@@ -24,5 +29,5 @@ if __name__ == '__main__':
 
     # Saving the converted audio in a mp3 file named
     # welcome 
-    myobj.save(f"{sys.argv}.mp3")
+    myobj.save("audio.mp3")
     # Playing the converted file
