@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     with open("Text.txt", "r", encoding="utf-8") as f:
         contents = f.read()
-        print(contents)
+        print("Text:" contents)
     mytext = contents
 
     # Language in which you want to convert
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # here we have marked slow=False. Which tells 
     # the module that the converted audio should 
     # have a high speed
-    myobj = gTTS(text=mytext, tld=language, slow=False)
+    myobj = gTTS(text=mytext, lang=language, tld=language, slow=False)
 
     # Saving the converted audio in a mp3 file named
     # welcome 
