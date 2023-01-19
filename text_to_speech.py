@@ -15,7 +15,7 @@ if __name__ == '__main__':
 
     with open("Text.txt", "r", encoding="utf-8") as f:
         contents = f.read()
-        print("Text:" contents)
+   
     mytext = contents
 
     # Language in which you want to convert
