@@ -51,9 +51,9 @@ name: Python application
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ["master"]
   pull_request:
-    branches: [ "master" ]
+    branches: ["master"]
 
 jobs:
   build:
@@ -65,9 +65,9 @@ jobs:
       - name: Run a Python script
         run: python text_to_speech.py
       - name: Archive audio file
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
-          name: audio-output
+          name: output_audio_file
           path: audio.mp3
 ```
 
@@ -91,4 +91,3 @@ Happy coding! 🚀
 ---
 
 Would you like me to refine this or add more details? Let me know! ✨
-
