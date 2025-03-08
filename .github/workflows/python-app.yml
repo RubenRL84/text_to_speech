@@ -30,4 +30,4 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           name: code-coverage-report
-          path: ./audio.mp3
+          path: audio.mp3
