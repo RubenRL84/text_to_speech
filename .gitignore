@@ -1,5 +1,4 @@
-.history    # history files
-.dist    # distribution files
+
 .idea       # idea files
 .DS_Store       # Mac OS files
 .vscode     # Visual Studio Code files
@@ -7,3 +6,6 @@
 venv    # virtualenv
 .venv   # virtualenv
 *.mp3       # mp3 files
+.dist
+.history
+.venv
